@@ -1,1 +1,2 @@
 # rock-paper-scissors
+A program where the user can play a game of rock paper scissors with a computer.
