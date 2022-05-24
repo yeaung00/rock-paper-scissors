@@ -13,3 +13,36 @@ function computerPlay() {
         return "scissor";
     }
 }
+
+function playerSelect(playerSelection, computerSelection) {
+    if (computerSelection == "rock") {
+        if (playerSelection == "paper") {
+            console.log("You win")
+            return 1;
+        }
+        else {
+            console.log("You lose")
+            return 0;
+        }
+    }
+    if (computerSelection == "paper") {
+        if (playerSelection == "scissor") {
+            console.log("You win")
+            return 1;
+        }
+        else {
+            console.log("You lose")
+            return 0;
+        }
+    }
+    if (computerSelection == "scissor") {
+        if (playerSelection == "rock") {
+            console.log("You win")
+            return 1;
+        }
+        else {
+            console.log("You lose")
+            return 0;
+        }
+    }
+}
