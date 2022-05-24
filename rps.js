@@ -54,6 +54,9 @@ function game() {
     for (let i = 0; i < 5; i++) {
         computerSelection = computerPlay();
         playerSelection = prompt("Choose between rock, paper, or scissors.");
+        while (playerSelection != "rock" || "paper" || "scissors") {
+            playerSelection = prompt("The input value is not accepted. Choose between rock, paper, or scissors.");
+        }
         points = playerSelect(playerSelection, computerSelection);
 
         if (points == 1) {
