@@ -46,3 +46,31 @@ function playerSelect(playerSelection, computerSelection) {
         }
     }
 }
+
+function game() {
+    let playerPoint = 0;
+    let computerPoint = 0;
+    let points = 0;
+    for (let i = 0; i < 5; i++) {
+        computerSelection = computerPlay();
+        playerSelection = prompt("Choose between rock, paper, or scissors.");
+        points = playerSelect(playerSelection, computerSelection);
+
+        if (points == 1) {
+            playerPoint += 1;
+        }
+        if (points == 0) {
+            computerPoint += 1;
+        }
+    }
+    
+    console.log(playerPoint +':'+computerPoint)
+    if (computerPoint > playerPoint) {
+        console.log("Computer wins!")
+    }
+    else {
+        console.log("You win!")
+    }
+}
+
+game();
