@@ -1,10 +1,59 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="UTF-8">
-    </head>
 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src = "rps.js" defer></script>
+    </head>
     <body>
-        <script src = "rps.js"></script>
+        <div class = "headerContainer">
+                <h1> Rock Paper Scissors </h1>
+        </div>
+
+        <div class = "bodyContainer">
+            <div class = "text">
+                <h2>First to 5 wins</h2>
+            </div> 
+            <div class = "choiceContainer">
+                <div class = "playerChoice"></div>
+                <div class = "compChoice"></div>
+            </div>
+            <div class = "resultContainer">
+                <div class = "playerResult"></div> 
+                <div class = "matchResult"></div> 
+                <div class = "compResult"></div> 
+            </div>
+                <div class = "buttons">
+                    <button class = "rock">🗿</button>
+                    <button class = "paper">🧻</button>
+                    <button class = "scissors">✂️</button>
+                </div>
+            <div class = "scoreLabel">
+                <div class = "label1"> You </div>
+                <div class = "label"> Computer </div>
+            </div>
+            <div class = "scoreContainer">
+                <div class = "playerScore"> 0 </div>
+                <div class = "compScore"> 0 </div>
+            </div> 
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 id = "winner">You lose!</h2>
+                  </div>
+                  <div class="modal-body">
+                    <button class = "retry"> Play again? </button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+        
     </body>
 </html>
