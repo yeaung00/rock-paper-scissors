@@ -6,6 +6,9 @@ body, html {
     width: 100%;
     margin: 0;
 }
+/* ==========
+Typography
+============= */
 .text {
     color:white;
     font-size: 1em;
@@ -94,9 +97,9 @@ body, html {
 .rock,
 .paper,
 .scissors {
-    font-size: 600%;
-    width: 20%;
-    height: 2em;
+    font-size: 6rem;
+
+    padding: 0.5em 0.5em;
     background-color: rgb(30, 30, 30);
     border:1px solid white;
     border-radius: 12px;
@@ -177,4 +180,19 @@ body, html {
     border:1px solid white;
     cursor: pointer;
 }
-  
+
+/* ==========
+Media queries
+============= */
+@media (max-width:680px) {
+    .buttons {
+        gap:2.5em;
+    }
+    .rock,
+    .paper,
+    .scissors {
+        padding: .1em .1em;
+        font-size: 5rem;
+    }
+}
+
